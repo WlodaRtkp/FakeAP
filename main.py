@@ -10,7 +10,7 @@ def send_beacon(ssid, mac, infinite=True):
     sendp(frame, inter=0.1, loop=1, iface=iface, verbose=0)
 
 if __name__ == "__main__":
-    iface = "wlp0s20f3mon"
+    iface = "wlan1mon"
     faker = Faker()
     ssids_macs = [("asdasd123", faker.mac_address())]
     for ssid, mac in ssids_macs:
